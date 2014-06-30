@@ -6,3 +6,16 @@
 @import "functions";
 @import "bootstrap/bootstrap";
 
+.navbar .active {
+  color: #fff !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}

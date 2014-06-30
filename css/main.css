@@ -7608,3 +7608,17 @@ button.close {
     display: none !important;
   }
 }
+/* line 9, ../sass/main.scss */
+.navbar .active {
+  color: #fff !important;
+}
+
+/* line 13, ../sass/main.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 18, ../sass/main.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

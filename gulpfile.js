@@ -28,14 +28,6 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./build/js'));
 });
 
-// 
-gulp.task('vendorscripts', function() {
-  return gulp.src(paths.vendorscripts)
-    .pipe(uglify())
-    .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('./js'));
-});
-
 gulp.task('styles', function() {
   return gulp.src(paths.styles)
     .pipe(cssmin())
@@ -77,5 +69,5 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['scripts', 'vendorscripts', 'compass', 'prefix', 'styles', 'images', 'svg2png', 'watch']);
+gulp.task('default', ['scripts', 'compass', 'prefix', 'styles', 'images', 'svg2png', 'watch']);
 
